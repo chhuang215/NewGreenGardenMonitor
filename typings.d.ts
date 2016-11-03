@@ -27,3 +27,7 @@ declare module '*.sass' {
   export default style;
 }
 
+
+declare module '*.scss' {
+ export const innerHTML: string;
+}

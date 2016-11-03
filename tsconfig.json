@@ -1,4 +1,7 @@
 {
+  "atom": {
+    "rewriteTsconfig": true
+  },
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -14,8 +17,24 @@
   "exclude": [
     "node_modules"
   ],
+  "filesGlob": [
+    "**/*.ts"
+  ],
   "files": [
-    "typings.d.ts"
+    "both/models/chat.model.ts",
+    "both/models/message.model.ts",
+    "client/imports/app/app.component.ts",
+    "client/imports/app/app.module.ts",
+    "client/imports/pages/chats/chats.component.ts",
+    "client/imports/pages/device-list/device-list.component.ts",
+    "client/imports/pages/device-status/device-status.component.ts",
+    "client/imports/pages/tabs-container/tabs-container.component.ts",
+    "client/main.ts",
+    "server/imports/server-main/main.ts",
+    "server/main.ts",
+    "typings.d.ts",
+    "typings/globals/moment/index.d.ts",
+    "typings/index.d.ts"
   ],
   "compileOnSave": false,
   "angularCompilerOptions": {

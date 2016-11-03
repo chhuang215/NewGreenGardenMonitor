@@ -1,28 +1,33 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { IonicApp, IonicModule } from "ionic-angular";
 import { AppComponent } from './app.component';
-import { DemoComponent } from './demo/demo.component';
-import { DemoDataService } from './demo/demo-data.service';
+
+import {DeviceListComponent} from "../pages/device-list/device-list.component";
+import {DeviceStatusComponent} from "../pages/device-status/device-status.component";
+import {MomentModule} from "angular2-moment";
 
 @NgModule({
   // Components, Pipes, Directive
   declarations: [
     AppComponent,
-    DemoComponent
+    DeviceListComponent,
+    DeviceStatusComponent
   ],
   // Entry Components
   entryComponents: [
-    AppComponent
+    AppComponent,
+    DeviceListComponent,
+    DeviceStatusComponent
   ],
   // Providers
   providers: [
-    DemoDataService
   ],
   // Modules
   imports: [
-    BrowserModule
+    IonicModule.forRoot(AppComponent),
+    MomentModule
   ],
   // Main Component
-  bootstrap: [ AppComponent ]
+  bootstrap: [ IonicApp ]
 })
 export class AppModule {}

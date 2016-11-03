@@ -1,5 +1,5 @@
 {
-  "name": "angular2-meteor-base",
+  "name": "garden-monitor",
   "private": true,
   "scripts": {
     "start": "meteor run",
@@ -13,21 +13,30 @@
     "chai-spies": "0.7.1"
   },
   "dependencies": {
-    "@angular/common": "2.1.1",
-    "@angular/compiler": "2.1.1",
-    "@angular/core": "2.1.1",
-    "@angular/forms": "2.1.1",
-    "@angular/platform-browser": "2.1.1",
-    "@angular/platform-browser-dynamic": "2.1.1",
-    "@angular/router": "3.1.1",
+    "@angular/common": "^2.1.2",
+    "@angular/compiler": "^2.1.2",
+    "@angular/compiler-cli": "^2.1.2",
+    "@angular/core": "^2.1.2",
+    "@angular/forms": "^2.0.0",
+    "@angular/http": "^2.1.2",
+    "@angular/platform-browser": "^2.1.2",
+    "@angular/platform-browser-dynamic": "^2.1.2",
+    "@angular/platform-server": "^2.1.2",
+    "@angular/router": "^3.1.2",
     "angular2-meteor": "0.7.0",
     "angular2-meteor-polyfills": "0.1.1",
     "angular2-meteor-tests-polyfills": "0.0.2",
+    "angular2-moment": "^1.0.0-beta.3",
+    "ionic-angular": "2.0.0-rc.0",
+    "ionic-native": "^2.2.6",
+    "ionicons": "^3.0.0",
     "meteor-node-stubs": "0.2.3",
-    "meteor-rxjs": "0.4.0",
+    "meteor-rxjs": "^0.4.1",
+    "meteor-typings": "1.3.1",
+    "moment": "^2.15.2",
     "reflect-metadata": "0.1.8",
     "rxjs": "5.0.0-beta.12",
-    "zone.js": "0.6.26",
-    "meteor-typings": "1.3.1"
+    "typescript": "^2.0.2",
+    "zone.js": "^0.6.21"
   }
 }
