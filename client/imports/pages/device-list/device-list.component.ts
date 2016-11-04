@@ -19,6 +19,7 @@ import {DeviceStatusComponent} from '../device-status/device-status.component';
         </ion-thumbnail>
         <h2>{{device.name}}</h2>
         <p>Condition: {{device.condition}}</p>
+        <p>IP: {{device.ipaddr}}</p>
       </button>
       <ion-item>
         <button ion-button block round icon-right>
@@ -30,25 +31,28 @@ import {DeviceStatusComponent} from '../device-status/device-status.component';
   `
 })
 export class DeviceListComponent {
-  devices = [
-    {
-      type: "eden",
-      name: "eden 1",
-      condition: "good"
-    },
-    {
-      type: "eden",
-      name: "eden 2",
-      condition: "good"
-    },
-    {
-      type: "wall",
-      name: "wall 1",
-      condition: "good"
-    },
-  ];
+  devices;
   constructor( public nav: NavController ) {
-
+    this.devices = [
+      {
+        type: "eden",
+        name: "eden 1",
+        condition: "good",
+        ipaddr: "192.168.1.2",
+      },
+      {
+        type: "eden",
+        name: "eden 2",
+        condition: "good",
+        ipaddr: "192.168.1.3",
+      },
+      {
+        type: "wall",
+        name: "wall 1",
+        condition: "good",
+        ipaddr: "192.168.1.4",
+      },
+    ];
   }
 
   openDeviceStatusPage(device) {
