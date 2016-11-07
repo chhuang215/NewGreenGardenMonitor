@@ -3,7 +3,8 @@ import { IonicApp, IonicModule } from "ionic-angular";
 import { AppComponent } from './app.component';
 
 import {DeviceListComponent} from "../pages/device-list/device-list.component";
-import {DeviceStatusComponent} from "../pages/device-status/device-status.component";
+import {DEVICESTATUS_DIRECTIVES} from "../pages/device-status/";
+import {PlantDetailComponent} from "../pages/plant-detail/plant-detail.component";
 import {MomentModule} from "angular2-moment";
 
 @NgModule({
@@ -11,13 +12,15 @@ import {MomentModule} from "angular2-moment";
   declarations: [
     AppComponent,
     DeviceListComponent,
-    DeviceStatusComponent
+    DEVICESTATUS_DIRECTIVES,
+    PlantDetailComponent
   ],
   // Entry Components
   entryComponents: [
     AppComponent,
     DeviceListComponent,
-    DeviceStatusComponent
+    DEVICESTATUS_DIRECTIVES,
+    PlantDetailComponent
   ],
   // Providers
   providers: [

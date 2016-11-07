@@ -1,5 +1,6 @@
-import {Component} from "@angular/core";
+import { Component } from "@angular/core";
 import { NavParams } from 'ionic-angular';
+import { PlantDetailComponent } from "../plant-detail/plant-detail.component"
 import style from "./device-status.component.scss";
 
 @Component({
@@ -26,13 +27,8 @@ import style from "./device-status.component.scss";
           <ion-col width-33>Nutrient</ion-col>
         </ion-row>
       </ion-grid>
-      <div>{{eventTriggered}}</div>
-      <div class="device-inner {{spinClass}}" (tap)="tapEvent($event)" (rotate)="rotateEvent($event)">
-        <div class="seed-slots">
-          <button ion-button small round *ngFor="let seedSlot of seedSlots" >{{seedSlot.id}}</button>
-        </div>
-      </div>
-      <button ion-button small (click)="rotateRight($event)" >rotate right</button>
+      <!--div>{{eventTriggered}}</div-->
+      <plant-slots></plant-slots>
     </ion-content>
   `,
   styles: [style],
@@ -40,36 +36,28 @@ import style from "./device-status.component.scss";
 
 export class DeviceStatusComponent {
   device ;
-  seedSlots ;
-  eventTriggered = "none";
+  //eventTriggered = "none";
   spinClass= "";
   constructor(params: NavParams) {
     this.device = params.data.device;
-    this.seedSlots = [];
-    let slotPositions = [
-      {left: "50%" ,top: "40%"},
-      {left:"60%", top:"50%"},
-    ];
-    for(let i = 1; i <=18; i++){
-      this.seedSlots.push({id:i, type:"lettuce"});
-    }
+
   }
 
-  rotateRight(e){
-    if(!this.spinClass)
-      this.spinClass = "spin";
-    else{
-      this.spinClass = "";
-    }
-  }
-
-  tapEvent(e){
-    console.log(e);
-    this.eventTriggered =  "TAP";
-  }
-
-  rotateEvent(e){
-    console.log(e);
-    this.eventTriggered = "ROTATE";
-  }
+  // rotateRight(e){
+  //   if(!this.spinClass)
+  //     this.spinClass = "spin";
+  //   else{
+  //     this.spinClass = "";
+  //   }
+  // }
+  //
+  // tapEvent(e){
+  //   console.log(e);
+  //   this.eventTriggered =  "TAP";
+  // }
+  //
+  // rotateEvent(e){
+  //   console.log(e);
+  //   this.eventTriggered = "ROTATE";
+  // }
 }

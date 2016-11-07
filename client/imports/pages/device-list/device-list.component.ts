@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 //import template from "/client/imports/pages/device-list/device-list.component.html";
 import {DeviceStatusComponent} from '../device-status/device-status.component';
 @Component({
@@ -43,7 +43,7 @@ export class DeviceListComponent {
       {
         type: "eden",
         name: "eden 2",
-        condition: "good",
+        condition: "need water",
         ipaddr: "192.168.1.3",
       },
       {

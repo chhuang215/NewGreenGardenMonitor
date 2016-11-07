@@ -4,3 +4,8 @@ npm-debug.log
 typings
 .idea
 .meteor/local
+
+client/imports/pages/chats/
+client/imports/pages/tabs-container/
+
+both/models/*

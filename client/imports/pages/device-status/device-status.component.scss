@@ -1,36 +1,16 @@
-.circle{
-  border-radius: 50%;
-}
 
-.device-inner{
-  @extend .circle;
-  background-color: rgb(133, 34, 34);
-  border-radius: 50%;
-  width: calc(100vw - 32px);
-  height: calc(100vw - 32px);
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 400px;
-  max-height: 400px;
-  display: table;
-  .seed-slots{
-    text-align: center;
-    vertical-align: middle;
-    display: table-cell;
-  }
-}
 
-.spin {
-    animation-name: spin;
-    animation-duration: 1000ms;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-}
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(90deg);
-    }
-}
+// .spin {
+//     animation-name: spin;
+//     animation-duration: 1000ms;
+//     animation-iteration-count: 1;
+//     animation-timing-function: linear;
+// }
+// @keyframes spin {
+//     from {
+//         transform:rotate(0deg);
+//     }
+//     to {
+//         transform:rotate(90deg);
+//     }
+// }
