@@ -1,34 +1,8 @@
-import { Component , Input , OnInit} from "@angular/core";
-import { DomSanitizer } from '@angular/platform-browser';
+import { Component} from "@angular/core";
 import { NavParams } from 'ionic-angular';
 import style from "./plant-detail.component.scss";
-import videoStyle from "./video-recipe.component.scss";
 
-@Component({
-  selector: "video-recipe",
-  template:`
-  <div class="videoContainer">
-    <iframe [src]="srcUrl" frameborder="0" allowfullscreen ></iframe>
-  </div>
-  `,
-  styles:[videoStyle],
-
-})
-export class VideoRecipeComponent implements OnInit{
-  @Input() src;
-  @Input() width;
-  @Input() height;
-  srcUrl ;
-  constructor(public sanitizer: DomSanitizer) {
-
-  }
-
-  ngOnInit() {
-
-    this.srcUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.src);
-  }
-
-}
+import {RecipeVideoComponent} from "./recipe-video.component";
 
 @Component({
 
@@ -59,8 +33,9 @@ export class VideoRecipeComponent implements OnInit{
         <div class="recipeTitle">
           <h2 (click)="toggleRecipe(recipe)">{{recipe.name}}  <span class="difficulty">Difficulty: {{recipe.difficulty}}</span></h2>
         </div>
-        <br>
+
         <div *ngIf="recipe.show">
+          <br>
           <h2> Ingrediants </h2>
           <ul>
             <li *ngFor="let ingredient of recipe.ingredients">
@@ -68,8 +43,9 @@ export class VideoRecipeComponent implements OnInit{
             </li>
           </ul>
 
-          <video-recipe src={{recipe.video.src}}></video-recipe>
-        </div >
+          <recipe-video src={{recipe.video.src}}></recipe-video>
+
+        </div > <!-- /recipe-->
       </ion-item>
     </ion-list>
   </ion-content>

@@ -8,3 +8,7 @@ export const DEVICESTATUS_DIRECTIVES: any[] = [
   PlantSlotComponent,
   PlantSlotsComponent
 ];
+
+export const DEVICESTATUS_ENTRY: any[] = [
+  DeviceStatusComponent,
+];
