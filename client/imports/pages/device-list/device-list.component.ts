@@ -1,10 +1,8 @@
 import {Component} from "@angular/core";
 import { NavController } from 'ionic-angular';
-//import template from "/client/imports/pages/device-list/device-list.component.html";
 import {DeviceStatusComponent} from '../device-status/device-status.component';
 @Component({
   selector: "device-list",
-  //template: template,
   template: `
   <ion-header>
     <ion-navbar>
@@ -46,12 +44,12 @@ export class DeviceListComponent {
         condition: "need water",
         ipaddr: "192.168.1.3",
       },
-      {
-        type: "wall",
-        name: "wall 1",
-        condition: "good",
-        ipaddr: "192.168.1.4",
-      },
+      // {
+      //   type: "wall",
+      //   name: "wall 1",
+      //   condition: "good",
+      //   ipaddr: "192.168.1.4",
+      // },
     ];
   }
 
