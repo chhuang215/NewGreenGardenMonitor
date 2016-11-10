@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 
 import {DeviceListComponent} from "../pages/device-list/device-list.component";
 import {DEVICESTATUS_DIRECTIVES} from "../pages/device-status/";
-import {PlantDetailComponent} from "../pages/plant-detail/plant-detail.component";
+import {PlantDetailComponent, VideoRecipeComponent} from "../pages/plant-detail/plant-detail.component";
 import {MomentModule} from "angular2-moment";
 
 @NgModule({
@@ -13,7 +13,8 @@ import {MomentModule} from "angular2-moment";
     AppComponent,
     DeviceListComponent,
     DEVICESTATUS_DIRECTIVES,
-    PlantDetailComponent
+    PlantDetailComponent,
+    VideoRecipeComponent
   ],
   // Entry Components
   entryComponents: [

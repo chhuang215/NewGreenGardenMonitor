@@ -33,6 +33,7 @@ export class PlantSlotsComponent {
             {
               name: "Simple Lettuce Salad",
               servings: 2,
+              difficulty: 1,
               ingredients: [
                 {
                   name: "NewGreen Lettuce",
@@ -70,6 +71,7 @@ export class PlantSlotsComponent {
                 width: 560,
                 height:315
               },
+              show: false
             },
 
           ],
