@@ -40,6 +40,7 @@
     "server/imports/server-main/main.ts",
     "server/main.ts",
     "typings.d.ts",
+    "typings/globals/jquery/index.d.ts",
     "typings/globals/moment/index.d.ts",
     "typings/index.d.ts"
   ],

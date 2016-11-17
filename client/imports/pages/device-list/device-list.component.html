@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Devices</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let device of devices" (click)="openDeviceStatusPage(device)">
+      <ion-thumbnail item-left>
+        <img src="/ne_blue.png">
+      </ion-thumbnail>
+      <h2>{{device.name}}</h2>
+      <p>Condition: {{device.condition}}</p>
+      <p>IP: {{device.ipaddr}}</p>
+    </button>
+    <ion-item>
+      <button ion-button block round icon-right>
+        Add new <ion-icon ios="ios-add-circle" md="md-add-circle"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>

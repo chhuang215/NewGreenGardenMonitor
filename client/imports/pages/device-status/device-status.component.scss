@@ -18,3 +18,20 @@
 //         transform:rotate(90deg);
 //     }
 // }
+
+.c100{
+  font-size: 100px;
+}
+
+.c100 .fill, .pie, .c100 .bar{
+  border: 0.2em solid #307bbb;
+  width: 0.6em;
+  height:0.6em;
+}
+.c100:after{
+  top: 0.2em;
+  left:0.2em;
+  width: 0.6em;
+  height:0.6em;
+
+}

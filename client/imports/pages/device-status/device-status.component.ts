@@ -23,7 +23,14 @@ import style from "./device-status.component.scss";
             (click)="toggleStatusDetail(1)"
           >
             <div class="center">
-              <ion-icon ios="ios-water" md="md-water"></ion-icon> Water: OK / 67%
+              <div class="c100 p67 small">
+                <span>67%</span>
+                <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+                </div>
+              </div>
+              <ion-icon ios="ios-water" md="md-water" class="blue"></ion-icon> : OK
               <div *ngIf="statusToggled == 1 ">More detail</div>
             </div>
 

@@ -1,32 +1,10 @@
 import {Component} from "@angular/core";
 import { NavController } from 'ionic-angular';
 import {DeviceStatusComponent} from '../device-status/device-status.component';
+import template from "./device-list.component.html";
 @Component({
   selector: "device-list",
-  template: `
-  <ion-header>
-    <ion-navbar>
-      <ion-title>Devices</ion-title>
-    </ion-navbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <button ion-item *ngFor="let device of devices" (click)="openDeviceStatusPage(device)">
-        <ion-thumbnail item-left>
-          <img src="/plant.jpg">
-        </ion-thumbnail>
-        <h2>{{device.name}}</h2>
-        <p>Condition: {{device.condition}}</p>
-        <p>IP: {{device.ipaddr}}</p>
-      </button>
-      <ion-item>
-        <button ion-button block round icon-right>
-          Add new <ion-icon ios="ios-add-circle" md="md-add-circle"></ion-icon>
-        </button>
-      </ion-item>
-    </ion-list>
-  </ion-content>
-  `
+  template
 })
 export class DeviceListComponent {
   devices;
