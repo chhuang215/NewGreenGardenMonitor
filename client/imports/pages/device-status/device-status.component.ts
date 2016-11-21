@@ -14,7 +14,7 @@ import style from "./device-status.component.scss";
       </ion-navbar>
     </ion-header>
 
-    <ion-content padding>
+    <ion-content padding scroll="false" style="overflow: hidden;">
       <ion-grid>
         <ion-row>
           <ion-col
@@ -30,7 +30,7 @@ import style from "./device-status.component.scss";
                   <div class="fill"></div>
                 </div>
               </div>
-              <ion-icon ios="ios-water" md="md-water" class="blue"></ion-icon> : OK
+              <ion-icon ios="ios-water" md="md-water" class="water-blue"></ion-icon> : OK
               <div *ngIf="statusToggled == 1 ">More detail</div>
             </div>
 
@@ -89,22 +89,4 @@ export class DeviceStatusComponent {
     }
 
   }
-
-  // rotateRight(e){
-  //   if(!this.spinClass)
-  //     this.spinClass = "spin";
-  //   else{
-  //     this.spinClass = "";
-  //   }
-  // }
-  //
-  // tapEvent(e){
-  //   console.log(e);
-  //   this.eventTriggered =  "TAP";
-  // }
-  //
-  // rotateEvent(e){
-  //   console.log(e);
-  //   this.eventTriggered = "ROTATE";
-  // }
 }

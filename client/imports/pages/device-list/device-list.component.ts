@@ -2,9 +2,11 @@ import {Component} from "@angular/core";
 import { NavController } from 'ionic-angular';
 import {DeviceStatusComponent} from '../device-status/device-status.component';
 import template from "./device-list.component.html";
+import style from "./device-list.component.scss";
 @Component({
   selector: "device-list",
-  template
+  template,
+  styles: [style]
 })
 export class DeviceListComponent {
   devices;
