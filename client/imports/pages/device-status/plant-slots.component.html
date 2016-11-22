@@ -1,0 +1,7 @@
+<div class="device-inner">
+    <div class="plant-slots">
+        <button ion-button small round class="btn-plant-slot" *ngFor="let plantSlot of plantSlots" (click)="openPlantDetailPage(plantSlot)" >
+        {{plantSlot.id}}
+        </button>
+    </div>
+</div>

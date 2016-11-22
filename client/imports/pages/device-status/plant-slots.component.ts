@@ -1,18 +1,12 @@
 import { Component } from "@angular/core";
 import { NavController} from 'ionic-angular';
 import { PlantDetailComponent } from "../plant-detail/plant-detail.component"
+
+import template from "./plant-slots.component.html";
 import style from "./plant-slots.component.scss";
 @Component({
   selector: "plant-slots",
-  template: `
-    <div class="device-inner">
-      <div class="plant-slots">
-        <button ion-button small round class="btn-plant-slot" *ngFor="let plantSlot of plantSlots" (click)="openPlantDetailPage(plantSlot)" >
-        {{plantSlot.id}}
-        </button>
-      </div>
-    </div>
-  `,
+  template,
   styles: [style],
 
 })
