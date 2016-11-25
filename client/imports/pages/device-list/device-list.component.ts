@@ -13,17 +13,17 @@ export class DeviceListComponent {
   constructor( public nav: NavController ) {
     this.devices = [
       {
-        type: "eden",
-        name: "eden 1",
+        type: "neweden",
+        name: "NewEden 1",
         condition: "good",
         ipaddr: "192.168.1.2",
       },
-      {
-        type: "eden",
-        name: "eden 2",
-        condition: "need water",
-        ipaddr: "192.168.1.3",
-      },
+      // {
+      //   type: "neweden",
+      //   name: "NewEden 2",
+      //   condition: "need water",
+      //   ipaddr: "192.168.1.3",
+      // },
       // {
       //   type: "wall",
       //   name: "wall 1",

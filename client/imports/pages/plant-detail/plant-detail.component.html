@@ -1,11 +1,13 @@
  <ion-header>
     <ion-navbar>
       <ion-title>
-        Plant Detail - {{ plant.id }}. {{plant.type}}
+        {{ plant.id }}. {{plant.type}}
       </ion-title>
     </ion-navbar>
   </ion-header>
   <ion-content padding>
+    <div class="harvestBar"><img src="/harvest_bar.png" alt=""></div>
+    <br>
     <ion-grid>
       <ion-row>
         <ion-col width-50>
@@ -13,10 +15,10 @@
                 <img src={{plant.img}} alt={{plant.type}}>
             <div>
         </ion-col>
-        <ion-col width-50><h2>Days: 15</h2></ion-col>
+        <ion-col width-50><span style="padding-top:5rem"></span><h2>15 Days </h2><h2>until harvest..</h2></ion-col>
       </ion-row>
     </ion-grid>
-    <div>{{plant.description}}</div>
+    <div><p [innerHTML]="plant.description" style="font-size:2.1rem"></p></div>
     <br>
     <ion-list>
       <ion-list-header>
@@ -24,18 +26,22 @@
       </ion-list-header>
       <ion-item *ngFor="let recipe of plant.recipes">
         <div class="recipeTitle">
-          <h2 (click)="toggleRecipe(recipe)">{{recipe.name}}  <span class="difficulty">Difficulty: {{recipe.difficulty}}</span></h2>
+          <h2 (click)="toggleRecipe(recipe)"> <ion-icon [name]="isToggledIcon(recipe.show)"></ion-icon> {{recipe.name}}  <span class="difficulty">Difficulty: {{recipe.difficulty}}</span></h2>
         </div>
 
-        <div *ngIf="recipe.show">
+        <div *ngIf="recipe.show " [@myAnimation]="recipe.show">
           <br>
-          <h2> Ingrediants </h2>
-          <ul>
-            <li *ngFor="let ingredient of recipe.ingredients">
-              {{ingredient.quantity}} {{ingredient.technique}} {{ingredient.name}}
-            </li>
-          </ul>
+          <div class="ingredientsContainer">
+            <h2 class="subsectionTitle"> Ingredients </h2>
+            <ul>
+              <li *ngFor="let ingredient of recipe.ingredients">
+                {{ingredient.quantity}} {{ingredient.technique}} {{ingredient.name}}
+              </li>
+            </ul>
 
+          </div>
+          
+          <h2 class="subsectionTitle"> Video Instruction </h2>
           <recipe-video src={{recipe.video.src}}></recipe-video>
 
         </div > <!-- /recipe-->

@@ -33,11 +33,12 @@ App.icons({
 //   // Android
 
   //'android_ldpi_landscape': 'resources/splash/splash-320x200.png',
-  'android_mdpi_portrait': 'resources/splash/splash320x480.png',
+  'android_mdpi_portrait': 'resources/splash/splash320x470.png',
   //'android_mdpi_landscape': 'resources/splash/splash-480x320.png',
-  'android_hdpi_portrait': 'resources/splash/splash480x800.png',
+  'android_hdpi_portrait': 'resources/splash/splash480x640.png',
  // 'android_hdpi_landscape': 'resources/splash/splash-800x480.png',
-  'android_xhdpi_portrait': 'resources/splash/splash720x1280.png',
+  'android_xhdpi_portrait': 'resources/splash/splash720x960.png',
+  'android_xxhdpi_portrait': 'resources/splash/splash1080x1440.png',
   //'android_xhdpi_landscape': 'resources/splash/splash-1280x720.png'
 //  android_mdpi_portrait (320x470)
 // android_mdpi_landscape (470x320)

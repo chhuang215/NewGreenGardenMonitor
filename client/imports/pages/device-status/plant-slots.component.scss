@@ -1,3 +1,5 @@
+$baseColor : #8ebae0;
+
 .circle{
   border-radius: 50%;
 }
@@ -17,6 +19,19 @@
   display: table;
 
   .plant-slots{
+
+
+    button{
+      background-color: $baseColor;
+      box-shadow: 0 -1.5px 0 .5px darken($baseColor, 10%) inset, 4px 7px 6px rgba(#000, 0.56), 14px 9px rgba(#fff, 0.20) inset;
+      transition: none;
+      color: #000;
+      &:active{
+        background: darken($baseColor, 20%);
+        box-shadow: 0 -1.5px 0 .5px darken(darken($baseColor, 20%), 10%) inset, 0px 0px 0px rgba(#000, 0.56), 7px 7px rgba(#fff, 0.20) inset;
+      }
+    }
+
     text-align: center;
     
     padding-top: 3.1rem;

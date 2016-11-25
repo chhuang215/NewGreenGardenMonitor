@@ -1,19 +1,41 @@
-.difficulty{
-  color: rgb(112, 112, 112);
-  font-size:1.4rem;
-  margin-left: auto;
+
+
+ion-list{
+  min-height: calc(100vh - 88px);
+  
+  ion-list-header{
+    font-size:1.7rem;
+    text-align: center;
+  }
+
+  
+  .recipeTitle{
+    h2{
+      font-size: 2rem;
+    }
+    .difficulty{
+      color: rgb(112, 112, 112);
+      font-size:1.4rem;
+      margin-left: auto;
+    }
+  }
+  .subsectionTitle{
+     color: #666;
+    text-align: center;
+  }
+
+
 }
 
-// .recipeTitle{
-
-// }
-
 .img-container{
-  background-color: rgba(255, 255, 255, 0.5);
+ 
   img{
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  
   }
-  
 }
+
+
+
+

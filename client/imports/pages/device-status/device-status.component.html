@@ -9,25 +9,29 @@
 <ion-content padding scroll="false" style="overflow: hidden;">
     <div class="statusGrid">
         <div class="statusBlock" id="water" >
-            <div class="water">
-                <img src="/water-progress.png" alt="">
+            <div class="iconContainer"  >
+                <img src="/water-progress.png" alt="" (click)="toggleStatusDetail('water')">
                 <!--<div class="waterPercentage">
                     67%
                 </div>-->
             </div>
+
+            <div class="statusDetail">111</div>
                 
         </div>
         <div class="statusBlock" id="light" >
-            <div class="light">
-                <img src="/light_temp.png" alt="">
+            <div class="iconContainer">
+                <img src="/light_temp.png" alt="" (click)="toggleStatusDetail('light')">
     
             </div>
+            <div class="statusDetail">222</div>
         </div>
-        <div class="statusBlock" id="neutrient" >
-            <div class="neutrient">
-                <img src="/neutrient.png" alt="">
+        <div class="statusBlock" id="nutrient" (click)="toggleStatusDetail('nutrient')" >
+            <div class="iconContainer">
+                <img src="/nutrient.png" alt="">
     
             </div>    
+            <div class="statusDetail">333</div>
         </div>    
     </div>
 

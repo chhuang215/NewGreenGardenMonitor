@@ -22,14 +22,17 @@ export class DeviceStatusComponent {
   }
 
   toggleStatusDetail(stat){
-    if(this.displayAll){
-      this.displayAll = false;
-      this.statusToggled = stat;
-    }
-    else{
-      this.displayAll = true;
-      this.statusToggled = -1;
-    }
+    // if(this.displayAll){
+    //   this.displayAll = false;
+    //   this.statusToggled = stat;
+    // }
+    // else{
+    //   this.displayAll = true;
+    //   this.statusToggled = -1;
+    // }
+
+    console.log("toggled " + stat);
+    
 
   }
 }
