@@ -12,9 +12,6 @@ import style from "./device-status.component.scss";
 
 export class DeviceStatusComponent {
   device ;
-  //eventTriggered = "none";
-  spinClass= "";
-  displayAll = true;
   statusToggled = -1;
   constructor(params: NavParams) {
     this.device = params.data.device;
@@ -22,17 +19,18 @@ export class DeviceStatusComponent {
   }
 
   toggleStatusDetail(stat){
-    // if(this.displayAll){
-    //   this.displayAll = false;
-    //   this.statusToggled = stat;
-    // }
-    // else{
-    //   this.displayAll = true;
-    //   this.statusToggled = -1;
-    // }
-
-    console.log("toggled " + stat);
+    if(this.statusToggled == stat){
+      this.statusToggled = -1;
+      
+    }
+    else{
+      this.statusToggled = stat;
+    }
     
 
+  }
+
+  displayStatus(stat){
+    return ((this.statusToggled == -1) || stat==this.statusToggled);
   }
 }

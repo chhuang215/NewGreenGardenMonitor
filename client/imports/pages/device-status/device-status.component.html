@@ -8,30 +8,55 @@
 
 <ion-content padding scroll="false" style="overflow: hidden;">
     <div class="statusGrid">
-        <div class="statusBlock" id="water" >
+        <div class="statusBlock" id="water" 
+            [class.hide]="!displayStatus('water')"
+            
+            [ngClass]="{sideBlock: statusToggled == -1, selectedDetail: statusToggled == 'water'}"
+            >
+            
+
             <div class="iconContainer"  >
                 <img src="/water-progress.png" alt="" (click)="toggleStatusDetail('water')">
-                <!--<div class="waterPercentage">
-                    67%
-                </div>-->
             </div>
+            <div class="statusDetail" [class.hide]="statusToggled != 'water'">
+                <span class="closeDetail" (click)="statusToggled = -1">
+                    &times;
+                </span>           
+                Water Status: Good <br>
+                Level: 67% <br>
+                PH: 6.8 <br>
+                Next refill: 30 hours
 
-            <div class="statusDetail">111</div>
+            </div>
                 
         </div>
-        <div class="statusBlock" id="light" >
+        <div class="statusBlock" id="light" 
+            [class.hide]="!displayStatus('light')"
+            [ngClass]="{centerBlock: statusToggled == -1, selectedDetail: statusToggled == 'light'}"
+        >
             <div class="iconContainer">
                 <img src="/light_temp.png" alt="" (click)="toggleStatusDetail('light')">
     
             </div>
-            <div class="statusDetail">222</div>
+            <div class="statusDetail" [class.hide]="statusToggled != 'light'">
+                <span class="closeDetail" (click)="statusToggled = -1">&times;</span>   
+                Light : On <br>
+                Tempurature: 21 &#8451; / 70 &#8457; <br>
+
+            </div>
         </div>
-        <div class="statusBlock" id="nutrient" (click)="toggleStatusDetail('nutrient')" >
+        <div class="statusBlock" id="nutrient"  
+            [class.hide]="!displayStatus('nutrient')"
+            [ngClass]="{sideBlock: statusToggled == -1, selectedDetail: statusToggled == 'nutrient'}"
+        >
             <div class="iconContainer">
-                <img src="/nutrient.png" alt="">
+                <img src="/nutrient.png" alt="" (click)="toggleStatusDetail('nutrient')">
     
             </div>    
-            <div class="statusDetail">333</div>
+            <div class="statusDetail" [class.hide]="statusToggled != 'nutrient'">
+                <span class="closeDetail" (click)="statusToggled = -1">&times;</span>   
+                9 Days until adding more nutrient
+            </div>
         </div>    
     </div>
 

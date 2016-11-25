@@ -4,26 +4,17 @@
   text-align: center;
 }
 
-.hide{
-  display:none;
-  visibility: hidden;
-}
-
 .statusGrid{
+  min-height: 14.55rem;
+  max-height: 14.55rem;
   width:100%;
   box-sizing: border-box;
   margin: -14px 0 0 0;
+    
   &:before, &:after {
     box-sizing: border-box;
   }
-  #light{
-    width:39%;
-    vertical-align: top; 
-  }
-  #water, #nutrient{
-    margin-top: 5rem;
-    width:29%;
-  }
+
   .statusBlock{
     padding-right: 5px;
     padding-left: 5px;  
@@ -36,11 +27,22 @@
     
     .iconContainer{
       display:inline-block;
+      max-width: 11.9rem;
     }
 
     .statusDetail{
-      display:none;
-      visibility: hidden;
+      display:table-cell;
+      vertical-align: middle;
+      font-size:1.6rem;
+      .closeDetail{
+        position: absolute;
+        top: .4rem;
+        right: 1.4rem;
+        color: red;
+    //     font-size:2rem;    
+
+         font-size: 4.3rem;
+      }
     }
 
   }
@@ -48,6 +50,26 @@
     
 }
 
+.sideBlock{
+    margin-top: 5rem;
+    width:30.7%;
+}
+
+.centerBlock{
+    width:36%;
+    vertical-align: top; 
+}
+
+.hide{
+  display:none;
+  visibility: hidden;
+}
+
+.selectedDetail{
+  margin-top: .4rem;
+  width:100%;
+  display: table !important;
+}
 
 
 // .spin {
