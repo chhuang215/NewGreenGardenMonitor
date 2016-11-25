@@ -8,24 +8,41 @@
   background-repeat:no-repeat;
   background-size:100%;
 
-  width: calc(100vw - 32px);
+  width: calc(100vw - 2px);
   height: calc(126vw - 32px);
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: -15px;
+  margin-right: -15px;
   max-width: 400px;
   max-height: 508px;
   display: table;
 
   .plant-slots{
     text-align: center;
-    vertical-align: middle;
-    display: table-cell;
+    
+    padding-top: 3.1rem;
+    padding-right:3.7rem;
+    padding-left: 3.7rem;
+    // vertical-align: middle;
+    // display: table-cell;
 
+    .r4, .r5{
+      margin: -.8rem 0;
+    }
+    .r1, .r3 {
+      margin: -.4rem 0;
+    }
     .btn-plant-slot{
       border-radius: 50%;
-      width:2.2em;
-      height:2.2em;
-      padding:1.7em;
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 2.05rem;
+      margin-left: .3rem;
+      margin-right: .7rem;
+      font-size: 2rem;
+    }
+    .btn-ghost{
+      visibility: hidden;
+      
     }
 
   }

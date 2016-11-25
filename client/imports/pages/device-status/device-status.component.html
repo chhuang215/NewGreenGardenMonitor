@@ -7,14 +7,31 @@
 </ion-header>
 
 <ion-content padding scroll="false" style="overflow: hidden;">
-
     <div class="statusGrid">
-        <div></div>
-        <div></div>
-        <div></div>    
+        <div class="statusBlock" id="water" >
+            <div class="water">
+                <img src="/water-progress.png" alt="">
+                <!--<div class="waterPercentage">
+                    67%
+                </div>-->
+            </div>
+                
+        </div>
+        <div class="statusBlock" id="light" >
+            <div class="light">
+                <img src="/light_temp.png" alt="">
+    
+            </div>
+        </div>
+        <div class="statusBlock" id="neutrient" >
+            <div class="neutrient">
+                <img src="/neutrient.png" alt="">
+    
+            </div>    
+        </div>    
     </div>
 
-    <ion-grid>
+    <!--<ion-grid>
     <ion-row>
         <ion-col
         [attr.width-33]="displayAll? true : null"
@@ -45,7 +62,7 @@
         </div>
 
         </ion-col>
-        <!-- [attr.width-10]="!(displayAll || statusToggled == 3) ? true : null" -->
+ 
         <ion-col
 
         [attr.width-33]="displayAll? true : null"
@@ -58,7 +75,7 @@
 
         </ion-col>
     </ion-row>
-    </ion-grid>
+    </ion-grid>-->
     <!--div>{{eventTriggered}}</div-->
     <plant-slots></plant-slots>
 </ion-content>
