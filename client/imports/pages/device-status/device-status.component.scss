@@ -31,9 +31,12 @@
     }
 
     .statusDetail{
-      display:table-cell;
+    // display: none;
+     display:table-cell;
       vertical-align: middle;
       font-size:1.6rem;
+      overflow: hidden;
+      width:58%;
       .closeDetail{
         position: absolute;
         top: .4rem;
@@ -63,6 +66,8 @@
 .hide{
   display:none;
   visibility: hidden;
+  margin:0;
+  padding:0;
 }
 
 .selectedDetail{
