@@ -14,3 +14,8 @@ A prototype mobile app for monitoring indoor garden.
 1. Plug in your mobile phone to your computer with USB debugging enabled
 2. Run `meteor run android-device` or `meteor run ios-device`
 Note: In order run in iOS, a Mac with Xcode 7.2 or higher are needed.
+
+![alt text](https://raw.githubusercontent.com/chhuang215/NewGreenGardenMonitor/master/screenshots/1device-list.png "Device List")
+![alt text](https://raw.githubusercontent.com/chhuang215/NewGreenGardenMonitor/master/screenshots/2device-status.png "Device Status")
+![alt text](https://raw.githubusercontent.com/chhuang215/NewGreenGardenMonitor/master/screenshots/2device-status-nutrient.png "Nutrient status expand")
+![alt text](https://raw.githubusercontent.com/chhuang215/NewGreenGardenMonitor/master/screenshots/3plant-detail.png "Plant Detail")
