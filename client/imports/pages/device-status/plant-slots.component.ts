@@ -35,28 +35,53 @@ export class PlantSlotsComponent {
                   technique: "",
                 },
                 {
-                  name: "egg",
-                  quantity: "1",
-                  technique: "chopped hard-cooked",
-                },
-                {
-                  name: "green onion",
-                  quantity: "1",
-                  technique: "sliced",
-                },
-                {
-                  name: "mayonnaise",
-                  quantity: "2 tablespoons",
+                  name: "grapes",
+                  quantity: "150g",
                   technique: "",
                 },
                 {
-                  name: "cider vinegar",
-                  quantity: "1 teaspoon",
-                  technique: "sliced",
+                  name: "apple",
+                  quantity: "1",
+                  technique: "",
                 },
                 {
-                  name: "pepper",
-                  quantity: "1/8 teaspoon",
+                  name: "lemon",
+                  quantity: "1",
+                  technique: "",
+                },
+                {
+                  name: "shelled walnuts",
+                  quantity: "60g",
+                  technique: "",
+                },
+                {
+                  name: "celery",
+                  quantity: "1 stalk",
+                  technique: "",
+                },
+                {
+                  name: "tarragon",
+                  quantity: "6 sprigs",
+                  technique: "",
+                },
+                {
+                  name: "organic yogurt",
+                  quantity: "250ml",
+                  technique: "",
+                },
+                {
+                  name: "olive oil",
+                  quantity: "",
+                  technique: "",
+                },
+                {
+                  name: "english mustard",
+                  quantity: "",
+                  technique: "",
+                },
+                {
+                  name: "salt and pepper",
+                  quantity: "",
                   technique: "",
                 },
               ],
@@ -105,7 +130,7 @@ export class PlantSlotsComponent {
                 },
               ],
               video: {
-                src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+                src: "https://www.youtube.com/embed/HWRC5OWiyBg",
                 width: 560,
                 height:315
               },

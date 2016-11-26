@@ -26,7 +26,7 @@
       </ion-list-header>
       <ion-item *ngFor="let recipe of plant.recipes">
         <div class="recipeTitle">
-          <h2 (click)="toggleRecipe(recipe)"> <ion-icon [name]="isToggledIcon(recipe.show)"></ion-icon> {{recipe.name}}  <span class="difficulty">Difficulty: {{recipe.difficulty}}</span></h2>
+          <h2 (click)="toggleRecipe(recipe)"> <ion-icon [name]="isToggledIcon(recipe.show)"></ion-icon> {{recipe.name}}  <span class="difficulty">Difficulty: {{recipe.difficulty}} / 5</span></h2>
         </div>
 
         <div *ngIf="recipe.show " [@myAnimation]="recipe.show">
