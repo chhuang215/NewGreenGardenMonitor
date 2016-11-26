@@ -21,7 +21,7 @@ export class PlantSlotsComponent {
         {
           id:i,
           type:"Romaine Lettuce",
-          img:"romaine-lettuce.jpg",
+          img:"romaine.png",
           description: "Romaine <br/> Also known as Cos, this variety of head forming lettuce has deep green, long leaves with a crisp texture and deep taste.<br/><br/> Romaine's vitamin C and beta-carotene content make it a heart-healthy green. Vitamin C and beta-carotene work together to prevent the oxidation of cholesterol.",
           recipes:[
             {
